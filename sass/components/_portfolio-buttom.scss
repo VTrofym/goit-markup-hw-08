@@ -1,0 +1,80 @@
+.portfolio__button {
+    margin-bottom: 40px;
+    margin-top: 0;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        justify-content: center;
+    }
+}
+
+.portfolio__bloc {
+    margin-right: 8px;
+    margin-bottom: 15px;
+}
+
+.portfolio__button--all:hover,
+.portfolio__button--websites:hover,
+.portfolio__button--apps:hover,
+.portfolio__button--design:hover,
+.portfolio__button--marketing:hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: var(--font-сolor-white);
+    background-color: var(--background-color-blue);
+}
+
+.portfolio__button--all:focus,
+.portfolio__button--websites:focus,
+.portfolio__button--apps:focus,
+.portfolio__button--design:focus,
+.portfolio__button--marketing:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: var(--font-сolor-white);
+    background-color: var(--background-color-blue);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio__button--all {
+    min-width: 73px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio__button--websites {
+    min-width: 128px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio__button--apps {
+    min-width: 145px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio__button--design {
+    min-width: 103px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio__button--marketing {
+    min-width: 130px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio__button--samble {
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    padding: 6px 22px;
+    display: inline-block;
+
+    background-color: var(--background-color-grey);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+}

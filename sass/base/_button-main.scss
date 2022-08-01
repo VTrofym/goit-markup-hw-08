@@ -1,0 +1,30 @@
+.button-main {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 32px;
+    display: inline-block;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    background: var(--background-color-blue);
+    color: var(--font-сolor-white);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    min-width: 200px;
+    letter-spacing: var(--letter-spacing-l);
+    &:hover,
+    &:focus {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    
+        background: var(--background-button-main);
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}

@@ -1,0 +1,172 @@
+.block-nav {
+    margin-left: 93px;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        margin-left: 88px;
+    }
+}
+
+.block-nav__main {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+    
+        display: block;
+    
+        background: var(--background-color-blue);
+        border-radius: 2px;
+    
+        margin-top: 28px;
+        }
+}
+
+.block-nav__portfolio--strip {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+    
+        display: block;
+    
+        background: var(--background-color-blue);
+        border-radius: 2px;
+    
+        margin-top: 28px;
+        }
+}
+
+.block-nav__studiya,
+.block-nav__portfolio--link,
+.block-nav__contacts {
+    color: var(--font-сolor-black-other);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.block-nav__pages .block-nav__studiya:hover,
+.block-nav__pages .block-nav__studiya:focus,
+.block-nav__pages .block-nav__portfolio--link:hover,
+.block-nav__pages .block-nav__portfolio--link:focus,
+.block-nav__pages .block-nav__contacts:hover,
+.block-nav__pages .block-nav__contacts:focus {
+    color: var(--font-сolor-blue);
+}
+
+.block-nav__studiya--blue,
+.block-nav__portfolio--strip {
+    color: var(--font-сolor-blue);
+}
+
+.block-nav__pages,
+.contact {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-nav__studiya,
+.block-nav__portfolio--link,
+.block-nav__contacts,
+.contact__feedback--mail,
+.contact__call--tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: var(--letter-spacing-l);
+}
+
+.contact {
+    color: var(--font-сolor-black-p);
+    margin-left: auto;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
+
+.contact__call {
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 30px;
+        padding-bottom: 32px;
+        padding-top: 32px;
+    }
+}
+
+.contact__feedback {
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 10px;;
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 32px 0px;
+    }
+}
+
+.contact__feedback--mail,
+.contact__call--tel {
+    display: flex;
+    align-items: center;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact__feedback--mail:hover,
+.contact__feedback--mail:focus,
+.contact__call--tel:hover,
+.contact__call--tel:focus {
+    color: var(--background-button-main);
+}
+
+.contact__feedback--mail:hover .contact__feedback---evenlope,
+.contact__feedback--mail:focus .contact__feedback---evenlope,
+.contact__call--tel:hover .contact__call--smartphone,
+.contact__call--tel:focus .contact__call--smartphone {
+    fill: var(--background-button-main);
+}
+
+.contact__feedback---evenlope,
+.contact__call--smartphone {
+    margin-right: 10px;
+    display: block;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.block-nav__portfolio {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+
+
+.burger {
+
+    @media screen and (min-width: 768px) {
+    display: none;
+    }
+}
+
+.burger__icon {
+    fill: #000000;
+}
+
+.burger:hover .burger__icon,
+.burger:hover .burger__icon {
+    fill: #2196F3;
+}

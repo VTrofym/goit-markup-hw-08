@@ -1,0 +1,29 @@
+.logo {
+    font-size: 24px;
+    line-height: 1.17;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.2;
+    }
+}
+
+.logo--blue {
+    color: var(--font-сolor-blue);
+    font-family: Raleway, sans-serif;
+    letter-spacing: var(--letter-spacing-m);
+}
+
+.logo--black {
+    color: var(--font-сolor-black-logo);
+    font-family: Raleway, sans-serif;
+    letter-spacing: var(--letter-spacing-m);
+}
+
+.logo--white {
+    color: var(--font-сolor-white);
+    font-family: Raleway, sans-serif;
+    letter-spacing: var(--letter-spacing-m);
+}

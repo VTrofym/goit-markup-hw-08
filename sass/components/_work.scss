@@ -1,0 +1,47 @@
+.work {
+    padding-bottom: 94px;
+    @media screen and (max-width: 1199px) {
+        display: none;
+    };
+}
+
+.work__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+
+    color: var(--font-сolor-black-other);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+}
+
+.work__list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.work__block {
+    position: relative;
+}
+
+.work__benefits {
+    position: absolute;
+    bottom: 0;
+
+    width: 370px;
+    height: 70px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.8);
+    color: var(--font-сolor-white);
+
+    padding: 27px 0 27px;
+}
