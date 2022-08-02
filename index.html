@@ -35,11 +35,37 @@
                     </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
-            <button class="burger" type="button">
-                <svg class="burger__icon" width="24px" height="16px">
+            <button data-mobile-open class="burger" type="button">
+                <svg class="burger__icon-open" width="24px" height="16px">
                     <use href="./images/svg/sprite.svg#icon-menu_24px"></use>
                 </svg>
             </button>
+        </div>
+        <div data-mobile class="mob-menu">
+            <div class="container">
+                <button data-mobile-close type="button" class="mob-menu__burger-close">
+                    <svg class="mob-menu__burger-close-svg" width="19px" height="19px">
+                        <use href="./images/svg/sprite.svg#icon-close_24px"></use>
+                    </svg>
+                </button>
+                <nav class="mob-menu__nav">
+                    <ul class="mob-menu__nav-list">
+                        <li class="mob-menu__nav-pages"><a href="./index.html"></a>Студия</li>
+                        <li class="mob-menu__nav-pages"><a href="./portfolio.html"></a>Портфолио</li>
+                        <li class="mob-menu__nav-pages"><a href="#"></a>Контакты</li>
+                    </ul>
+                </nav>
+                <ul class="mob-menu__contacts">
+                    <li class="mob-menu__contacts-tel"><a href="tel:+380961111111"></a>+38 096 111 11 11</li>
+                    <li class="mob-menu__contacts-mail"><a href="mailto:info@devstudio.com"></a>info@devstudio.com</li>
+                </ul>
+                <ul class="mob-menu__social">
+                    <li class="mob-menu__social-link">Instagram</li>
+                    <li class="mob-menu__social-link">Twitter</li>
+                    <li class="mob-menu__social-link">Facebook</li>
+                    <li class="mob-menu__social-link">LinkedIn</li>
+                </ul>
+            </div>
         </div>
     </header>
 <!----------- main --------------->
@@ -147,19 +173,32 @@
                 <h2 class="work__title">Чем мы занимаемся</h2>
                 <ul class="work__list">
                     <li class="work__block">
-                        <img src="./images/main-jpg-squoosh/box1.jpg" alt="рабочий стол листом А4" width="370">
+                        <picture>
+                            <source srcset="./images/work/work-1-370.jpg,
+                                            ./images/work/work-1-370-2x.jpg"
+                                    media="(min-width: 1200px)"/>
+                            <img src="./images/work/work-1-370-2x.jpg" alt="рабочий стол листом А4" width="370">
+                        </picture>
                         <div class="work__benefits">
                             <p>Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="work__block">
-                        <img src="./images/main-jpg-squoosh/box2.jpg" alt="телефон в руке и на мониторе" width="370">
+                        <picture>
+                            <source srcset="./images/work/work-2-370.jpg,
+                                            ./images/work/work-2-370-2x.jpg" media="(min-width: 1200px)" />
+                            <img src="./images/work/work-2-370-2x.jpg" alt="ноутбук и телефон" width="370">
+                        </picture>
                         <div class="work__benefits">
                             <p>Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="work__block">
-                        <img src="./images/main-jpg-squoosh/box3.jpg" alt="цветовая раскладка на планшете" width="370">
+                        <picture>
+                            <source srcset="./images/work/work-3-370.jpg,
+                                            ./images/work/work-3-370-2x.jpg" media="(min-width: 1200px)" />
+                            <img src="./images/work/work-3-370-2x.jpg" alt="планшет со стилусом в руках" width="370">
+                        </picture>
                         <div class="work__benefits">
                             <p>Дизайнерские решения</p>
                         </div>
@@ -173,7 +212,18 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__bloc">
-                        <img class="team__img" src="./images/main-jpg-squoosh/img-1.jpg" alt="чел в бордовой рубашке" width="270">
+                        <picture>
+                            <source srcset="./images/team/team-270px/team-one-270.jpg,
+                                            ./images/team/team-270px/team-one-270-2x.jpg" 
+                                    media="(min-width: 1200px)"/>
+                            <source srcset="./images/team/team-354px/team-one-354.jpg,
+                                            ./images/team/team-354px/team-one-354-2x.jpg"
+                                    media="(min-width: 768px)" />
+                            <source srcset="./images/team/team-450px/team-one-450.jpg,
+                                            ./images/team/team-450px/team-one-450-2x.jpg"
+                                    media="(min-width: 320px)" />
+                            <img class="team__img" src="./images/team/team-450px/team-one-450-2x.jpg" alt="чел в бордовой рубашке" width="270">
+                        </picture>
                         <div class="team__description">
                             <h3 class="team__bloc--name">Игорь Демьяненко</h3>
                             <p class="team__bloc--speciality">Product Designer</p>
@@ -210,7 +260,18 @@
                         </ul>
                     </li>
                     <li class="team__bloc">
-                        <img class="team__img"  src="./images/main-jpg-squoosh/img-2-2.jpg" alt="блондинка с веснушками" width="270">
+                        <picture>
+                            <source srcset="./images/team/team-270px/team-two-270.jpg,
+                                            ./images/team/team-270px/team-two-270-2x.jpg"
+                                    media="(min-width: 1200px)" />
+                            <source srcset="./images/team/team-354px/team-two-354.jpg,
+                                            ./images/team/team-354px/team-two-354-2x.jpg" 
+                                            media="(min-width: 768px)" />
+                            <source srcset="./images/team/team-450px/team-two-450.jpg,
+                                            ./images/team/team-450px/team-two-450-2x.jpg" 
+                                            media="(min-width: 320px)" />
+                            <img class="team__img" src="./images/team/team-450px/team-two-450-2x.jpg" alt="блондинка с веснушками" width="270">
+                        </picture>
                         <div class="team__description">
                             <h3 class="team__bloc--name">Ольга Репина</h3>
                             <p class="team__bloc--speciality">Frontend Developer</p>
@@ -247,7 +308,18 @@
                         </ul>
                     </li>
                     <li class="team__bloc">
-                        <img class="team__img"  src="./images/main-jpg-squoosh/img-3-2.jpg" alt="чел в голубой рубашке" width="270">
+                        <picture>
+                            <source srcset="./images/team/team-270px/team-three-270.jpg,
+                                            ./images/team/team-270px/team-three-270-2x.jpg"
+                                    media="(min-width: 1200px)" />
+                            <source srcset="./images/team/team-354px/team-three-354.jpg,
+                                            ./images/team/team-354px/team-three-354-2x.jpg" 
+                                            media="(min-width: 768px)" />
+                            <source srcset="./images/team/team-450px/team-three-450.jpg,
+                                            ./images/team/team-450px/team-three-450-2x.jpg" 
+                                            media="(min-width: 320px)" />
+                            <img class="team__img" src="./images/team/team-450px/team-three-450-2x.jpg" alt="парень в голубой рубашке" width="270">
+                        </picture>
                         <div class="team__description">
                             <h3 class="team__bloc--name">Николай Тарасов</h3>
                             <p class="team__bloc--speciality">Marketing</p>
@@ -284,7 +356,19 @@
                         </ul>
                     </li>
                     <li class="team__bloc">
-                        <img class="team__img"  src="./images/main-jpg-squoosh/img-4-2.jpg" alt="чел в черной футболке" width="270">
+                        <picture>
+                            <source srcset="./images/team/team-270px/team-four-270.jpg,
+                                            ./images/team/team-270px/team-four-270-2x.jpg"
+                                    media="(min-width: 1200px)" />
+                            <source srcset="./images/team/team-354px/team-four-354.jpg,
+                                            ./images/team/team-354px/team-four-354-2x.jpg"
+                                    media="(min-width: 768px)" />
+                            <source srcset="./images/team/team-450px/team-four-450.jpg,
+                                            ./images/team/team-450px/team-four-450-2x.jpg"
+                                    media="(min-width: 320px)" />
+                            <img class="team__img" src="./images/team/team-450px/team-four-450-2x.jpg" alt="парень в черной фулболке"
+                                width="270">
+                        </picture>
                         <div class="team__description">
                         <h3 class="team__bloc--name">Михаил Ермаков</h3>
                         <p class="team__bloc--speciality">UI Designer</p>
@@ -436,5 +520,6 @@
         </div>
     </footer>
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 </html>

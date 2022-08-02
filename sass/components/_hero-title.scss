@@ -6,11 +6,46 @@
     margin-right: auto;
 
     background-color: var(--background-color-black);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-jpg-squoosh/Img-6-2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                        url(../images/hero/hero-480.jpg);
     max-width: 1600px;
     min-height: 600px;
     background-position: center;
     background-repeat: no-repeat;
+    flex-grow: 1;
+
+    @media screen and (min-width: 480px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/hero/hero-480@2x.jpg);
+    }
+
+        @media screen and (min-width: 768px) {
+        padding: 272px 100px 237px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/hero/hero-768.jpg);
+
+        @media screen and (min-width: 768px) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/hero/hero-768@2x.jpg);
+        }
+    }
+
+        @media screen and (min-width: 1600px) {
+        padding: 272px 100px 208px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/hero/hero-1600.jpg);
+
+        @media screen and (min-width: 1600px) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/hero/hero-1600@2x.jpg);
+        }
+    }
 }
 
 .section-title__hero {
@@ -21,15 +56,14 @@
     letter-spacing: var(--letter-spacing-l);
 
     margin: 0 auto;
-    padding: 0px 60px;
 
-    @media screen and (min-width: 768px) {
-        padding: 0px 204px;
-        
-    }
+    width: 360px;
+
     @media screen and (min-width: 1200px) {
         font-size: 44px;
         line-height: 1.36;
         max-height: 600px;
+
+        width: 696px;
     }
 }
