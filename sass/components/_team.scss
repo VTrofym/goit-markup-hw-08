@@ -27,7 +27,6 @@
 }
 
 .team__list {
-    gap: 30px;
 
     @media screen and (min-width:768px) {
         display: flex;
@@ -41,12 +40,19 @@
 
     background-color: var(--background-color-white);
     padding-bottom: 30px;
+    margin-bottom: 30px;
 
     @media screen and (min-width: 768px) {
-        width: calc((100% - 30px) / 2);
+        width: 354px;
+        &:nth-child(odd) {
+            margin-right: 30px;
+        }
     }
     @media screen and (min-width: 1200px) {
-        width: calc((100% - 90px) / 4);
+        width: 270px;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
     }
 }
 
